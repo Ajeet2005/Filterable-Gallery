@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 4rem auto;
+    width: 90%;
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: #f4459a;
+}
+
+.menu {
+    margin: 1.5rem 0;
+}
+
+.menu a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    background-color: #753cf8;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #5a2cbf;
+}
+
+.menu a:focus {
+    outline: 2px dashed #753cf8;
+    outline-offset: 4px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.store-item {
+    flex-basis: calc(25% - 1rem); /* Responsive basis for larger screens */
+    min-width: 150px; /* Ensures items are not too small */
+    padding: 1rem;
+}
+
+.store-item img {
+    width: 100%;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.store-item img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
